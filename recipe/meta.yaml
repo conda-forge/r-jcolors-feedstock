@@ -1,4 +1,4 @@
-{% set version = '0.0.3' %}
+{% set version = "0.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jcolors_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jcolors/jcolors_{{ version }}.tar.gz
-  sha256: 2be659eb5f4e83ccf1be9a3bfa01940520cdc2ddd8d2f039542257584bddf7d7
+  sha256: 26e686e30571682a637087af05ed7829b708eacf2ad33785efe183c83293b5a1
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
