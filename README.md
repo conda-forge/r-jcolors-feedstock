@@ -1,11 +1,11 @@
-About r-jcolors
-===============
+About r-jcolors-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jcolors-feedstock/blob/main/LICENSE.txt)
 
 Home: https://jaredhuling.github.io/jcolors/
 
 Package license: GPL-2
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jcolors-feedstock/blob/main/LICENSE.txt)
 
 Summary: Contains a selection of color palettes and 'ggplot2' themes designed by the package author.
 
