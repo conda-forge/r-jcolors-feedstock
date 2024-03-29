@@ -1,4 +1,4 @@
-{% set version = '0.0.4' %}
+{% set version = "0.0.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jcolors_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jcolors/jcolors_{{ version }}.tar.gz
-  sha256: 26e686e30571682a637087af05ed7829b708eacf2ad33785efe183c83293b5a1
+  sha256: a75830e6e81b7328d09bd79aa5cec728e51c68f366906e66c23f7f83b7ea3c8f
 
 build:
-  merge_build_host: True  # [win]
-  number: 4
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,8 +40,7 @@ test:
 about:
   home: https://jaredhuling.github.io/jcolors/
   license: GPL-2
-  summary: Contains a selection of color palettes and 'ggplot2' themes designed by the package
-    author.
+  summary: Contains a selection of color palettes and 'ggplot2' themes designed by the package author.
   license_family: GPL2
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
